@@ -1,9 +1,14 @@
 import React, { Component } from "react";
+import TopBar from "./TopBar";
 
 class Main extends Component {
+
     render () {
-        return <div>Hola mundo</div>;
+        return <div>
+            <TopBar />
+        </div>;
     }
+    
 }
 
 export default Main;
