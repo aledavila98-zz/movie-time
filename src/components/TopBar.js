@@ -9,13 +9,13 @@ class TopBar extends Component {
 
     render() {
         const topBarStyle = {
-            position: "fixed",
             display: "flex",
             width: "100%",
             boxSizing: "border-box"
         };
 
-        return <NavBar bg="dark" variant="dark" expand="lg" style={topBarStyle}>
+        return <div> 
+        <NavBar bg="dark" variant="dark" expand="lg" style={topBarStyle}>
             <NavBar.Brand href="#">
                 <b> Movie Time! </b>
             </NavBar.Brand>
@@ -27,7 +27,8 @@ class TopBar extends Component {
                     <Button variant="outline-secondary">Search</Button>
                 </Form>
             </NavBar.Collapse>
-        </NavBar>;
+        </NavBar>
+        </div>;
     }
 }
 
