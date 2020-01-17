@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Recommendations from "./Recommendations";
+import HotSeries from "./HotSeries";
 
 class Content extends Component {
 
@@ -11,7 +12,10 @@ class Content extends Component {
             <Container>
                 <Row>
                     <Col> <Recommendations /> </Col>
-                    <Col>Col2</Col>
+                    <Col></Col>
+                </Row>
+                <Row>
+                    <Col> <HotSeries /> </Col>
                 </Row>
             </Container>
         </div>;
