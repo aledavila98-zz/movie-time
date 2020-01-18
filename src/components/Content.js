@@ -11,11 +11,11 @@ class Content extends Component {
         return <div>
             <Container>
                 <Row>
-                    <Col> <Recommendations /> </Col>
-                    <Col></Col>
-                </Row>
-                <Row>
                     <Col> <HotSeries /> </Col>
+                </Row>
+                <Row> <hr /> </Row>
+                <Row>
+                    <Col> <Recommendations /> </Col>
                 </Row>
             </Container>
         </div>;

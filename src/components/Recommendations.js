@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
+import Button from "react-bootstrap/Button";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Axios from "axios";
 
 class Recommendations extends Component {
@@ -26,26 +29,39 @@ class Recommendations extends Component {
     
     render() {
         const {personalRecommendation} = this.state;
+        const cardStyle = {
+            "height": "100%",
+            "width": "auto"
+        };
+
+        const imgStyle={
+            "max-height": "200",
+            "max-width": "auto"
+        }
+
         console.log(personalRecommendation)
         return <div>
             <CardDeck>
-                <Card>
-                    <Card.Header>
-                        Featured this week!
-                    </Card.Header>
+                <Card bg="dark" text="white" border="light" style={cardStyle} >
+                    <Card.Img height="70%" width="auto" src={personalRecommendation.Poster} alt="" variant="top" />
                     <Card.Body>
-                        Title: {personalRecommendation.Title}
+                        <Card.Title>
+                            <h5> Featured this week! </h5>
+                        </Card.Title>
+                        <a href="https://www.youtube.com/watch?v=eOrNdBpGMv8">
+                            <h3> {personalRecommendation.Title} </h3> 
+                        </a>
                     </Card.Body>
                 </Card>
                 <Card>
-                    <Card.Header>
+                    <Card.Title>
                         My personal recomendation
-                    </Card.Header>
+                    </Card.Title>
                 </Card>
                 <Card>
-                    <Card.Header>
+                    <Card.Title>
                         FYI
-                    </Card.Header>
+                    </Card.Title>
                 </Card>
             </CardDeck>
         </div>;
