@@ -7,6 +7,7 @@ class Recommendations extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            featured: {},
             personalRecommendation: {},
             fyi: {}
         }
