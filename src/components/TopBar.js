@@ -15,7 +15,7 @@ class TopBar extends Component {
         };
 
         return <div> 
-        <NavBar bg="light" variant="light" expand="lg" style={topBarStyle}>
+        <NavBar bg="dark" variant="dark" expand="lg" style={topBarStyle}>
             <NavBar.Brand href="#">
                 <b> Movie Time! </b>
             </NavBar.Brand>

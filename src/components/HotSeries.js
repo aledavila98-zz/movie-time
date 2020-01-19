@@ -32,7 +32,7 @@ class HotSeries extends Component {
     displaySeries = () => {
         
         const titleStyle = {
-            "color": "white"
+            "color": "black"
         };
         const synopsisStyle = {
             "textAlign": "justify"
