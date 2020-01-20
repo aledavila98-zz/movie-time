@@ -47,7 +47,6 @@ class Recommendations extends Component {
             "width": "auto" 
         };
 
-        console.log(featured)
         return <div>
             <CardDeck>
                 <Card bg="dark" text="white" border="light" style={cardStyle}>
